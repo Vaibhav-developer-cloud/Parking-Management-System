@@ -1,0 +1,1 @@
+'app.User.user_permissions' this issue occur model customizing time=AUTH_USER_MODEL = 'app.User'
