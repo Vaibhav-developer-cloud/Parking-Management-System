@@ -32,3 +32,7 @@ class ColumnView(generics.ListCreateAPIView):
 class VehicalView(generics.ListCreateAPIView):
     queryset = Vehical.objects.all()
     serializer_class = VehicalSerializers
+
+class ParkingView(generics.ListCreateAPIView):
+    queryset = Parking.objects.all()
+    serializer_class = ParkingSerelizers

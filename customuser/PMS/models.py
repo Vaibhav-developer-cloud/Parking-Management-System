@@ -46,3 +46,11 @@ class Vehical(models.Model):
     vehical_name = models.CharField(max_length=100)
     vehical_type = models.CharField(choices=Types,max_length=40)
     vehical_no = models.CharField(max_length=40)
+
+
+class Parking(models.Model):
+    vehicle = models.ForeignKey(Vehical,on_delete=models.CASCADE)
+    building = models.ForeignKey(Building,on_delete=models.CASCADE)
+    floor = models.ForeignKey(Floor,on_delete=models.CASCADE)
+    row = models.ForeignKey(Rows,on_delete=models.CASCADE)
+    column = models.ForeignKey(Column,on_delete=models.CASCADE)

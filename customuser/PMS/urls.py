@@ -22,7 +22,9 @@ urlpatterns = [
     path('rows/',RowsView.as_view(),name='rows'),
     path('floor/',FloorView.as_view(),name='floor'),
     path('column/',ColumnView.as_view(),name='column'),
-    path('vehical/', VehicalView.as_view(), name='vehical')
+    path('vehical/', VehicalView.as_view(), name='vehical'),
+    path('parking/entry',ParkingView.as_view(),name='parking')
+
 ]
 
 

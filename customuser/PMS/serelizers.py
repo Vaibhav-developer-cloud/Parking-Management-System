@@ -32,3 +32,8 @@ class VehicalSerializers(serializers.ModelSerializer):
     class Meta:
         model = Vehical
         fields = "__all__"
+
+class ParkingSerelizers(serializers.ModelSerializer):
+    class Meta:
+        model = Parking
+        fields = "__all__"
